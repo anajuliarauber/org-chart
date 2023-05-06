@@ -18,3 +18,8 @@ To get started with the application, follow these steps:
 2. Run `yarn install` to install all dependencies
 3. Run `yarn dev` to start the development server
 4. Open your web browser and navigate to `http://localhost:3000`
+
+## Dependencies
+
+- Node: v19.7.0
+- Yarn: v1.22.19
