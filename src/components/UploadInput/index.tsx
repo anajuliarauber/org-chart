@@ -14,6 +14,10 @@ export function UploadInput({ control, name }: UploadInputProps) {
     name: name,
     multiple: false,
     maxCount: 1,
+    action: 'https://www.mocky.io/v2/5cc8019d300000980a055e76',
+    headers: {
+      authorization: 'authorization-text',
+    },
 
     // file type validation
     beforeUpload: (file) => {
