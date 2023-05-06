@@ -7,6 +7,8 @@ This is a web application built using TypeScript, React.js, Tailwindcss and Next
 - Import CSV files
 - Display organizational chart based on imported data
 - Filter data by month
+- Show the total paid in the month
+- Print the organizational chart
 
 ## Getting Started
 
