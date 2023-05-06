@@ -12,9 +12,7 @@ export function SelectInput({ control, name, options, defaultValue, title }: Sel
 
   return (
     <>
-      <p text-gray-900 text-xl font-normal>
-        {title}
-      </p>
+      <p className="text-gray-900 text-xl font-normal">{title}</p>
       <Select
         allowClear
         style={{ width: '100%' }}
