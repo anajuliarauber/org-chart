@@ -9,6 +9,7 @@ import { OrgChart } from '@/components/OrgChart';
 import { generateOrgChart } from '@/utils/generateOrgChart';
 
 import { EmployeeNode, SelectOptions, ParseResults, ParsedEmployeeData } from '@/shared/types';
+import Head from 'next/head';
 
 export default function Home() {
   const { handleSubmit, control } = useForm();
@@ -68,34 +69,39 @@ export default function Home() {
   }, [month, parsedData]);
 
   return (
-    <main className={`flex min-h-screen items-center justify-center p-32`}>
-      <div className="w-full">
-        <p className="text-gray-900 text-5xl font-bold leading-none mt-0 mb-12">
-          Conversor de CSV a <br />
-          Organigrama
-        </p>
-        <p className="text-gray-900 text-xl font-normal">
-          Sube tu archivo CSV y crea tu organigrama en línea.
-        </p>
-      </div>
-      {!orgChart ? (
-        <form
-          onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col gap-12 items-center justify-center w-full"
-        >
-          <UploadInput control={control} name="file" />
+    <>
+      <Head>
+        <title>Organigrama</title>
+      </Head>
+      <main className={`flex min-h-screen items-center justify-center p-32`}>
+        <div className="w-full">
+          <p className="text-gray-900 text-5xl font-bold leading-none mt-0 mb-12">
+            Conversor de CSV a <br />
+            Organigrama
+          </p>
+          <p className="text-gray-900 text-xl font-normal">
+            Sube tu archivo CSV y crea tu organigrama en línea.
+          </p>
+        </div>
+        {!orgChart ? (
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            className="flex flex-col gap-12 items-center justify-center w-full"
+          >
+            <UploadInput control={control} name="file" />
 
-          <Button htmlType="submit">Generar oganigrama</Button>
-        </form>
-      ) : (
-        <OrgChart
-          filterOptions={filterOptions}
-          defaultSelectValue={month}
-          nodes={orgChart}
-          setMonth={setMonth}
-          totalPaidInTheMonth={totalPaidInTheMonth}
-        />
-      )}
-    </main>
+            <Button htmlType="submit">Generar oganigrama</Button>
+          </form>
+        ) : (
+          <OrgChart
+            filterOptions={filterOptions}
+            defaultSelectValue={month}
+            nodes={orgChart}
+            setMonth={setMonth}
+            totalPaidInTheMonth={totalPaidInTheMonth}
+          />
+        )}
+      </main>
+    </>
   );
 }
