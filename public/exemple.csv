@@ -1,0 +1,15 @@
+Mes,Nombre ,ID,Fecha de ingreso,Sueldo  bruto,División,Area,Subarea,ID Lider,Nivel Jerárquico
+5-2020,Juan Pérez,2345234523,01/04/2019,1200000,Ventas,Marketing,Digital,324532,Manager
+5-2020,Rodrigo Soto,7345734643,01/10/2019,900000,Ventas,Marketing,Editorial,2345234523,Supervisor
+5-2020,Jaime González,3423424653,11/04/2020,800000,Ventas,Regional,Regional,7345734643,Profesioal
+5-2020,Pedro Suárez,4564356543,15/10/2019,500000,Operaciones,Soporte,Clientes,3456345336,Profesional
+5-2020,Jorge Jiménez,3456345336,15/01/2020,1000000,Operaciones,Soporte,Clientes,2345234523,Cordinador
+4-2020,Juan Pérez,2345234523,01/04/2019,1200000,Ventas,Marketing,Digital,324532,Manager
+4-2020,Rodrigo Soto,7345734643,01/10/2019,800000,Ventas,Marketing,Editorial,3456345336,Profesional
+4-2020,Jaime González,3423424653,11/04/2020,700000,Ventas,Regional,Regional,3456345336,Profesioal
+4-2020,Pedro Suárez,4564356543,15/10/2019,500000,Operaciones,Soporte,Clientes,3456345336,Profesional
+4-2020,Jorge Jiménez,3456345336,15/01/2020,800000,Operaciones,Soporte,Clientes,2345234523,Cordinador
+3-2020,Juan Pérez,2345234523,01/04/2019,1000000,Ventas,Marketing,Digital,324532,Manager
+3-2020,Rodrigo Soto,7345734643,01/10/2019,800000,Ventas,Marketing,Editorial,3456345336,Profesional
+3-2020,Pedro Suárez,4564356543,15/10/2019,500000,Operaciones,Soporte,Clientes,3456345336,Profesional
+3-2020,Jorge Jiménez,3456345336,15/01/2020,800000,Operaciones,Soporte,Clientes,2345234523,Cordinador
