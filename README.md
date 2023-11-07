@@ -24,6 +24,6 @@ To get started with the application, follow these steps:
 - Node: v19.7.0
 - Yarn: v1.22.19
 
-## Exemple
+## Example
 
-There is an exemple file to upload in the folder 'public'
+There is an example file to upload in the folder 'public'
